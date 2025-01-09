@@ -1,0 +1,23 @@
+.n-wrapper {
+  @apply relative flex flex-wrap justify-around mb-8 mt-0 p-4 w-full top-0 z-50 transition-all duration-300 ease-in-out tracking-wide bg-white shadow-[2px_2px_2px_theme(orange)];
+}
+
+.n-left {
+  @apply flex flex-auto items-center gap-8;
+}
+
+.n-name {
+  @apply text-orange text-2xl font-bold;
+}
+
+.n-right {
+  @apply flex items-start font-normal transition ease-in-out duration-300;
+}
+
+.n-right > ul {
+  @apply flex gap-8 font-normal text-lg transition ease-in-out duration-300;
+}
+
+.n-right > ul > li {
+  @apply transition ease-in-out duration-300 my-auto;
+}
