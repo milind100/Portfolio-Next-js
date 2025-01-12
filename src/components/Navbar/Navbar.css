@@ -1,13 +1,13 @@
 .n-wrapper {
-  @apply relative flex flex-wrap justify-around mb-8 mt-0 p-4 w-full top-0 z-50 transition-all duration-300 ease-in-out tracking-wide bg-white shadow-[2px_2px_2px_theme(orange)];
+  @apply relative flex flex-wrap justify-around mb-8 mt-0 p-4 w-full top-0 z-50 transition-all duration-300 ease-in-out tracking-wide bg-white shadow-[2px_2px_2px_#fd7e14];
 }
 
 .n-left {
-  @apply flex flex-auto items-center gap-8;
+  @apply flex  items-center gap-8;
 }
 
 .n-name {
-  @apply text-orange text-2xl font-bold;
+  @apply text-black text-[2rem] font-bold;
 }
 
 .n-right {
@@ -20,4 +20,46 @@
 
 .n-right > ul > li {
   @apply transition ease-in-out duration-300 my-auto;
+}
+
+.n-button {
+  @apply font-bold text-[#121212] border border-[#121212] px-[32px] py-[18px] text-lg relative ml-4 bg-transparent transition ease-in-out duration-300 z-10 bg-orange;
+}
+
+.n-link{
+  @apply text-[#007bff]
+}
+
+.n-button span {
+  @apply relative z-20;
+}
+
+.n-link:hover {
+  @apply text-[#e74d06] cursor-pointer;
+}
+
+.n-button::before {
+  content: "";
+  @apply absolute h-full bg-black left-0 top-0 z-10 transition-all duration-[0.6s] ease-in-out;
+  width: 0%;
+}
+
+ .n-button:hover {
+  @apply text-white cursor-pointer;
+}
+
+ .n-button:hover::before {
+  content: "";
+  @apply w-full h-full absolute;
+}
+
+.n-middle {
+  @apply hidden;
+}
+
+.n-right.active {
+  left: 2px;
+}
+.n-link .n-button {
+  @apply py-3 px-6 ml-2 text-[15px];
 }

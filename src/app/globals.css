@@ -25,9 +25,21 @@ body {
   font-family: "Centra", sans-serif !important;
 }
 
-.title-container {
-  @apply flex flex-col items-center my-5;
+.title {
+  @apply flex flex-col items-center mt-5
 }
+
+.title > :nth-child(1) {
+@apply text-black font-bold text-5xl
+
+}
+.title > :nth-child(2) {
+  @apply text-rorange font-bold text-2xl text-center
+}
+
+/* .title-container {
+  @apply flex flex-col items-center my-5;
+} */
 
 /* :root {
   --rorange: #ec8a60;

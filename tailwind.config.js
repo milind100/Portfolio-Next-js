@@ -16,7 +16,7 @@ module.exports = {
       },
       colors: {
         rorange: "#ec8a60",
-        orange: "#FCA61F",
+        orange: "#fd7e14",
         black: "#0d2137",
         gray: "#788097",
         blue: "#2E77AE",

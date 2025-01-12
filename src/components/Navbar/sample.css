@@ -1,96 +1,85 @@
-/* Global wrapper styles */
-/* .n-wrapper {
-  @apply relative flex flex-wrap justify-around mt-0 mb-8 p-4 w-full top-0 transition-all duration-300 ease-in-out letter-spacing[1px] bg-white shadow-[2px_2px_2px_theme('colors.orange')];
-} */
+<div className="flex justify-around bg-red-500" id="Navbar">
+        <div className="n-left">
+          <div className="n-name">Chiku</div>
+          {/* <Toggle /> */}
+        </div>
+        {/* <div className="n-middle">
+          <h1
+            onClick={() => {
+              setNavToggle(!navToggle);
+            }}
+          >
+            {navToggle === false ? (
+              <GiHamburgerMenu color="var(--orange)" />
+            ) : (
+              <AiFillCloseCircle color="var(--orange)" />
+            )}
+          </h1>
+        </div> */}
+        {/* right */}
+        <div
+          // className={
+          //   window.innerWidth < 800 && navToggle === true
+          //     ? "n-right active"
+          //     : "n-right"
+          // }
+          className="n-right active"
+        >
+          <ul style={{ listStyleType: "none" }}>
+            <li>
+              {location.pathname === "/" ? (
+                <Link
+                  activeclass="active"
+                  href="Intro"
+                  // spy={true}
+                  // smooth={true}
+                >
+                  Home
+                </Link>
+              ) : (
+                <Link href="/" className="n-link">
+                  Home
+                </Link>
+              )}
+            </li>
 
-.n-wrapper {
-  @apply relative flex flex-wrap justify-around mb-8 mt-0 p-4 w-full top-0 z-50 transition-all duration-300 ease-in-out tracking-wide bg-white shadow-[2px_2px_2px_theme(orange)];
-}
+            {NavArray.map((curEle, i) => {
+              const { element, link } = curEle;
 
-/* Left part */
-.n-left {
-  @apply flex items-center gap-8;
-}
+              return (
+                <li
+                  key={i}
+                  onClick={() => {
+                    setNavToggle(!navToggle);
+                  }}
+                >
+                  <Link
+                    href={link}
+                    // spy={true}
+                    // smooth={true}
+                    activeclass="active"
+                    className="n-link"
+                  >
+                    {element}
+                  </Link>
+                </li>
+              );
+            })}
 
-/* Navbar name */
-.n-name {
-  @apply text-black text-2xl font-bold;
-}
-
-/* Right part */
-.n-right {
-  @apply flex items-start font-normal transition-all duration-300 ease-in-out;
-}
-
-/* Right ul styles */
-.n-right > ul {
-  @apply flex gap-8 text-sm font-normal transition-all duration-300 ease-in-out;
-}
-
-/* List item styles */
-.n-right > ul > li {
-  @apply transition-all duration-300 ease-in-out mx-auto;
-}
-
-/* Button styles */
-.n-link .n-button {
-  @apply font-extrabold text-[#121212] border-[#121212] py-4 px-8 text-xl ml-4 relative bg-transparent transition-all duration-300 ease-in-out z-10 bg-orange-500;
-}
-
-/* Button span styles */
-.n-link .n-button span {
-  @apply relative z-15;
-}
-
-/* Button hover styles */
-.n-link:hover {
-  @apply text-[#e74d06] cursor-pointer;
-}
-
-.n-link .n-button::before {
-  @apply content-[""] w-0 h-full absolute bg-black left-0 top-0 z-11 transition-all duration-300 ease-in-out;
-}
-
-.n-link .n-button:hover {
-  @apply text-white cursor-pointer;
-}
-
-.n-link .n-button:hover::before {
-  @apply w-full h-full absolute;
-}
-
-/* Middle menu visibility on mobile */
-.n-middle {
-  @apply hidden;
-}
-
-/* Media query for responsive design */
-@media screen and (max-width: 800px) {
-  .n-wrapper {
-    @apply sticky;
-  }
-
-  .n-left {
-    @apply w-4/5;
-  }
-
-  .n-middle {
-    @apply block cursor-pointer;
-  }
-
-  .n-right {
-    @apply absolute top-[90px] left-[-202px] w-[200px] block py-5 bg-white shadow-[2px_2px_2px_1px_theme('colors.orange')];
-  }
-
-  .n-right > ul {
-    @apply flex-col;
-  }
-
-  .n-right.active {
-    @apply left-2;
-  }
-
-  .n-link .n-button {
-    @apply py-2.5 px-6 ml-2 text-sm;
-  }
-}
+            {/* <li>
+              <Link href="/login" className="n-link">
+                <FaUser />
+              </Link>
+            </li>
+            {location.pathname !== "/" ? (
+              <li>
+                <Link href="/login">
+                  <button onClick={handleLogout} className="n-link">
+                    logout
+                  </button>
+                </Link>
+              </li>
+            ) : null} */}
+          </ul>
+        </div>
+      </div>
