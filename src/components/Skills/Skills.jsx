@@ -65,7 +65,6 @@ const Skills = () => {
           <div className="skills_main">
             {skillsArray.map((curEle, i) => {
               const { name, level } = curEle;
-              console.log("level", curEle);
               return (
                 <div className="skill_bar" key={i}>
                   <div className="info">
