@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
@@ -13,9 +13,6 @@ import Link from "next/link";
 
 // const PORT = "http://localhost:6969/api/v1"
 // const imgPath = "http://localhost:6969/public/upload/"
-
-const PORT = "/api/v1";
-const imgPath = "/public/upload/";
 
 const About = () => {
   const transition = { duration: 2, type: "spring" };

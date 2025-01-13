@@ -82,7 +82,7 @@ const Navbar = () => {
             })}
             <li>
               <button className="n-button">
-                <span>Let's connect</span>
+                <span>Let&apos;s connect</span>
               </button>
             </li>
           </ul>
