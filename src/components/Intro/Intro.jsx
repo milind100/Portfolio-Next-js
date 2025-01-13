@@ -5,35 +5,9 @@ import { motion } from "framer-motion";
 import "./intro.css";
 import Link from "next/link";
 import Image from "next/image";
+import { socialLinks } from "@/constants/socialLinks";
 
 const Intro = () => {
-  const socialLinks = [
-    {
-      src: "/img/Facebook.png",
-      link: "www.google.com",
-      alt: "Facebook Logo",
-    },
-    {
-      src: "/img/Insta.png",
-      link: "www.google.com",
-      alt: "Insta Logo",
-    },
-    {
-      src: "/img/Linkedin.png",
-      link: "www.google.com",
-      alt: "Linkedin Logo",
-    },
-    {
-      src: "/img/Github.png",
-      link: "www.google.com",
-      alt: "Github Logo",
-    },
-    {
-      src: "/img/Twitter.png",
-      link: "www.google.com",
-      alt: "Twitter Logo",
-    },
-  ];
   const transition = { duration: 2, type: "spring" };
   return (
     <div className="intro" id="Intro">
