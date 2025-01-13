@@ -86,7 +86,7 @@ const Intro = () => {
         className="w-[60%]"
       >
         <Image
-          src="/img/profile1.jpeg"
+          src="/img/profile.jpeg"
           alt="profile"
           width={400}
           height={400}
