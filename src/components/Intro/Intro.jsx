@@ -52,10 +52,10 @@ const Intro = () => {
             Milind Ravikant Patil
           </span>
           <p className="font-[100] text-[18px] text-blue mt-[10px] w-[80%]">
-            "Experienced React.js and Next.js developer specializing in
+            Experienced React.js and Next.js developer specializing in
             full-stack development, code fixes, and modifications. Proficient in
             enhancing functionality,and optimizing performance, Ready to tackle
-            complex challenges "
+            complex challenges
           </p>
 
           <motion.div

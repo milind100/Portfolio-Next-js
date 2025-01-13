@@ -3,10 +3,10 @@ import React from "react";
 
 import "./Navbar.css";
 
-import { GiHamburgerMenu } from "react-icons/gi";
-import { AiFillCloseCircle } from "react-icons/ai";
-import { FaUser } from "react-icons/fa";
-import Link from "next/link";
+// import { GiHamburgerMenu } from "react-icons/gi";
+// import { AiFillCloseCircle } from "react-icons/ai";
+// import { FaUser } from "react-icons/fa";
+// import Link from "next/link";
 import Toggle from "./Toggle";
 
 const Navbar = () => {
@@ -42,7 +42,7 @@ const Navbar = () => {
     <>
       <div className="n-wrapper" id="Navbar">
         <div className="n-left">
-          <div className="n-name">Chiku</div>
+          <div className="n-name">VikramAditya</div>
           <Toggle />
         </div>
         {/* <div className="n-middle">

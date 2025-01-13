@@ -10,8 +10,8 @@ export default function Home() {
     <div>
       <Intro />
       <Skills />
-      <About />
       <Projects />
+      <About />
     </div>
   );
 }
