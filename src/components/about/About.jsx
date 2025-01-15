@@ -24,7 +24,7 @@ const About = () => {
         </motion.div>
         <div className="a-body">
           <motion.div
-            className="a-left hidden"
+            className="a-left hidden md:block"
             initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={transition}
