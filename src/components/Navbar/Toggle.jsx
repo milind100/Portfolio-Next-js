@@ -13,6 +13,7 @@ const Toggle = () => {
   };
   useEffect(() => {
     setMounted(true);
+    setTheme("light");
   }, []);
 
   if (!mounted) {
