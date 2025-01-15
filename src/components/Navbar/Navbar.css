@@ -1,13 +1,13 @@
 .n-wrapper {
-  @apply relative flex flex-wrap justify-around mb-8 mt-0 p-4 w-full top-0 z-50 transition-all duration-300 ease-in-out tracking-wide bg-white shadow-[2px_2px_2px_#fd7e14];
+  @apply fixed flex flex-wrap justify-around mb-8 mt-0 p-4 w-full top-0 z-50 transition-all duration-300 ease-in-out tracking-wide bg-white shadow-[2px_2px_2px_#fd7e14] dark:bg-black items-center
 }
 
-.n-left {
-  @apply flex  items-center gap-8;
-}
+/* .n-left {
+  @apply flex w-full md:w-auto  items-center gap-8;
+} */
 
 .n-name {
-  @apply text-black text-[2rem] font-bold;
+  @apply text-black text-[1.5rem] mmd:text-[2rem] font-bold dark:text-whiten;
 }
 
 .n-right {
@@ -15,7 +15,7 @@
 }
 
 .n-right > ul {
-  @apply flex gap-8 font-normal text-lg transition ease-in-out duration-300;
+  @apply hidden md:flex gap-8 font-normal text-lg transition ease-in-out duration-300;
 }
 
 .n-right > ul > li {
@@ -23,11 +23,11 @@
 }
 
 .n-button {
-  @apply font-bold text-[#121212] border border-[#121212] px-[32px] py-[18px] text-lg relative ml-4 bg-transparent transition ease-in-out duration-300 z-10 bg-orange;
+  @apply font-bold text-[#121212] border border-[#121212] px-[28px] py-[16px] mmd:px-[32px] mmd:py-[18px] text-base mmd:text-lg relative ml-4 bg-transparent transition ease-in-out duration-300 z-10 bg-orange ;
 }
 
 .n-link{
-  @apply text-[#007bff]
+  @apply text-[#007bff] text-[14px] mmd:text-base
 }
 
 .n-button span {
@@ -40,12 +40,12 @@
 
 .n-button::before {
   content: "";
-  @apply absolute h-full bg-black left-0 top-0 z-10 transition-all duration-[0.6s] ease-in-out;
+  @apply absolute h-full bg-black dark:bg-white left-0 top-0 z-10 transition-all duration-[0.6s] ease-in-out;
   width: 0%;
 }
 
  .n-button:hover {
-  @apply text-white cursor-pointer;
+  @apply text-white dark:text-orange cursor-pointer;
 }
 
  .n-button:hover::before {
@@ -57,9 +57,7 @@
   @apply hidden;
 }
 
-.n-right.active {
-  left: 2px;
-}
+
 .n-link .n-button {
   @apply py-3 px-6 ml-2 text-[15px];
 }

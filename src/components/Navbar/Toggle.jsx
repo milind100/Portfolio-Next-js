@@ -1,25 +1,39 @@
 "use client";
-import React, { useState } from "react";
-// import "./Toggle.css";
+import React, { useEffect, useState } from "react";
 import { IoMoonSharp } from "react-icons/io5";
 import { BiSun } from "react-icons/bi";
+import { useTheme } from "next-themes";
 
 const Toggle = () => {
-  const [mode, setMode] = useState("sun");
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+
   const changeMode = () => {
-    mode === "sun" ? setMode("moon") : setMode("sun");
-    console.log(mode);
+    theme === "light" ? setTheme("dark") : setTheme("light");
   };
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <div className="flex justify-between  border-[3px] border-orange rounded-full relative p-[2px] cursor-pointer text-orange">
+        <BiSun />
+        <IoMoonSharp />
+      </div>
+    );
+  }
+
   return (
     <div
-      className="flex justify-between  border-[3px] border-orange rounded-full relative p-[2px] cursor-pointer text-orange"
+      className="flex justify-between border-[3px] border-orange rounded-full relative p-[2px] cursor-pointer text-orange"
       onClick={changeMode}
     >
       <BiSun />
       <IoMoonSharp />
       <div
         className={`bg-orange rounded-full absolute w-4 h-4 ${
-          mode === "sun" ? "left-[2px]" : "right-[2px]"
+          theme === "light" ? "left-[2px]" : "right-[2px]"
         }`}
       ></div>
     </div>

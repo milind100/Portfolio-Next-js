@@ -3,53 +3,15 @@ import React from "react";
 import "./skills.css";
 
 import { motion } from "framer-motion";
+import { skillsArray } from "@/constants/skills.desc";
 
 const transition = { duration: 2, type: "linear" };
 const transition1 = { duration: 2, type: "spring" };
 
 const Skills = () => {
-  const skillsArray = [
-    {
-      name: "React Js",
-      level: 90,
-    },
-    {
-      name: "Next Js",
-      level: 70,
-    },
-    {
-      name: "HTML",
-      level: 90,
-    },
-    {
-      name: "Javascript",
-      level: 80,
-    },
-    {
-      name: "CSS",
-      level: 70,
-    },
-
-    {
-      name: "Python",
-      level: 40,
-    },
-    {
-      name: "MOngo DB",
-      level: 50,
-    },
-    {
-      name: "Backend",
-      level: 50,
-    },
-  ];
   return (
     <>
-      <div className="skills" id="Skills">
-        {/* <div className="a-left">
-                        <img src={apic} alt="" />
-                    </div> */}
-
+      <div className="skills mb-16" id="Skills">
         <div className="skills_section">
           <motion.div
             className="title"

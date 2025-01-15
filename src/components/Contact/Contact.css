@@ -17,7 +17,7 @@
     
 }
 .c-left p{
-    @apply text-black font-bold text-[3rem]
+    @apply text-black dark:text-white font-bold text-[3rem]
 }
 .c-right{
     display: flex;

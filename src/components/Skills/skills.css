@@ -1,26 +1,25 @@
-.skills_section{
-    @apply w-full h-[80vh] mx-auto flex items-center justify-center flex-col rounded-[10%]
+.skills_section {
+  @apply top-0 w-full h-[80vh] mx-auto flex items-center justify-center flex-col rounded-[10%];
 }
 
 .skills_main {
-    @apply w-[90%] p-[5%_5%] bg-white shadow-[5px_5px_5px_5px_gray] grid grid-cols-2 gap-y-[30px] gap-x-[50px];
-  }
+  @apply w-[90%] p-[5%_5%] bg-white dark:bg-slate-700 shadow-[5px_5px_5px_5px_gray] grid md:grid-cols-2 gap-y-[30px] gap-x-[50px];
+}
 
-  .skills_main .skill_bar .info {
-    @apply flex justify-between items-center px-2.5;
-  }
+.skills_main .skill_bar .info {
+  @apply flex justify-between items-center px-2.5;
+}
 
+.skill_bar .bar {
+  @apply w-full h-2.5 bg-black dark:bg-slate-300 rounded-[25px] mt-1 relative;
+}
 
-  .skill_bar .bar {
-    @apply w-full h-2.5 bg-black rounded-[25px] mt-1 relative;
-  }
-  
-  /* For .skill_bar .info p */
-  .skill_bar .info p {
-    @apply text-lg font-bold text-black;
-  }
-  
-  /* For .skill_bar .bar span */
-  .skill_bar .bar span {
-    @apply w-1/2 h-full absolute bg-orange rounded-[25px];
-  }
+/* For .skill_bar .info p */
+.skill_bar .info p {
+  @apply sm:text-lg font-bold text-black dark:text-white;
+}
+
+/* For .skill_bar .bar span */
+.skill_bar .bar span {
+  @apply w-1/2 h-full absolute bg-orange rounded-[25px];
+}

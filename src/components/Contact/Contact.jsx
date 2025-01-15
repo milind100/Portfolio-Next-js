@@ -51,7 +51,7 @@ const Contact = () => {
             // whileInView={{ opacity: 1 }}
             // transition={transition}
           >
-            <form>
+            <form className="dark:text-white">
               <input
                 type="text"
                 name="name"

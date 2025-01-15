@@ -1,30 +1,29 @@
 /* For .About */
 .About {
-    @apply my-[100px];
-  }
-  
-  /* For .a-body */
-  .a-body {
-    @apply flex pl-[10%] items-center pt-8;
-  }
-  
-  /* For .a-body .a-right */
-  .a-body .a-right {
-    @apply m-[10px_50px] flex flex-col flex-wrap gap-4 text-[18px] text-black;
-  }
-  
-  /* For .a-left img */
-  .a-left img {
-    @apply relative  w-[650px] h-[350px] block;
-  }
-  
-  /* For .a-right button */
-  .a-right button {
-    @apply w-[200px] h-12 bg-orange text-black text-lg font-bold rounded-lg cursor-pointer;
-  }
-  
-  /* For .a-right button:hover */
-  .a-right button:hover {
-    @apply bg-black text-orange;
-  }
-  
+  @apply my-[100px];
+}
+
+/* For .a-body */
+.a-body {
+  @apply flex pl-[10%] items-center pt-8;
+}
+
+/* For .a-body .a-right */
+.a-body .a-right {
+  @apply my-[10px] mx-[20px] sm:mx-[50px] flex flex-col flex-wrap gap-4 text-[18px] text-black dark:text-orange;
+}
+
+/* For .a-left img */
+.a-left img {
+  @apply relative  w-[650px] h-[350px] block;
+}
+
+/* For .a-right button */
+.a-right button {
+  @apply w-[200px] h-12 bg-orange text-black text-lg font-bold rounded-lg cursor-pointer;
+}
+
+/* For .a-right button:hover */
+.a-right button:hover {
+  @apply bg-black text-orange;
+}

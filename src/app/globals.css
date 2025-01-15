@@ -20,21 +20,20 @@
 
 body {
   font-weight: 400;
-  background-color: whitesmoke !important;
+  /* background-color: whitesmoke !important; */
   color: #121212;
   font-family: "Centra", sans-serif !important;
 }
 
 .title {
-  @apply flex flex-col items-center mt-5
+  @apply flex flex-col items-center mt-5 dark:text-white;
 }
 
 .title > :nth-child(1) {
-@apply text-black font-bold text-5xl
-
+  @apply text-black font-bold text-2xl mmd:text-5xl dark:text-white;
 }
 .title > :nth-child(2) {
-  @apply text-rorange font-bold text-2xl text-center
+  @apply text-rorange font-bold text-base mmd:text-2xl text-center;
 }
 
 /* .title-container {

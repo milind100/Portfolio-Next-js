@@ -11,28 +11,20 @@ import Image from "next/image";
 import Link from "next/link";
 // import resume from "../../assets/milins.pdf";
 
-// const PORT = "http://localhost:6969/api/v1"
-// const imgPath = "http://localhost:6969/public/upload/"
-
 const About = () => {
   const transition = { duration: 2, type: "spring" };
 
   return (
     <>
-      <div className="About" id="About">
-        <motion.div
-          className="title"
-          //  initial={{ opacity: 0, }}
-          //  whileInView={{ opacity: 1}}
-          //  transition={transition}
-        >
+      <div className="About" id="about">
+        <motion.div className="title">
           {/* yahan change hy darkmode ka */}
           <span>About Me</span>
           <span>introduction </span>
         </motion.div>
         <div className="a-body">
           <motion.div
-            className="a-left"
+            className="a-left hidden"
             initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={transition}
@@ -45,7 +37,7 @@ const About = () => {
             />
           </motion.div>
           <motion.div
-            className="a-right"
+            className="a-right "
             initial={{ opacity: 0, x: 0 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={transition}
@@ -54,20 +46,26 @@ const About = () => {
               I am Developer with passion of bulding new websites and helping
               you out with my projects download my resume below{" "}
             </p>
-            <p className="flex gap-1 items-center">
+            <p className="flex gap-1 items-center  text-sm">
               <FaPhoneAlt className="text-blue" />
               8160997745
             </p>
-            <p className="flex gap-1 items-center">
-              <FaUserAlt className="text-blue" />
+            <p className="flex gap-1 items-center text-sm">
+              <FaUserAlt className="text-blue" size={20} />
               143 Sham villa ,Madhuram Circle ,Kharwasa Roast
               ,Surat,Gujarat,India
             </p>
-            <p className="flex gap-1 items-center">
+            <p className="flex gap-1 items-center text-sm">
               <FaEnvelope className="text-blue" />
               milind10rpatil@gmail.com
             </p>
-            <Link href={""} download="milindresume">
+            <Link
+              href="/resume.pdf"
+              download="milindresume"
+              alt="alt text"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="border-2 border-black self-end">
                 Download Cv
               </button>
